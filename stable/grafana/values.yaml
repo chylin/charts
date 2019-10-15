@@ -439,6 +439,8 @@ sidecar:
     searchNamespace: null
     # provider configuration that lets grafana manage the dashboards
     provider:
+      # add optionality to update dashboardprovider configmap outside of grafana deploy
+      enabled: true
       # name of the provider, should be unique
       name: sidecarProvider
       # orgid as configured in grafana
